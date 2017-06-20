@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.0.1)
+  - SwiftyJSON (2.3.2)
+  - YOChartImageKit (1.2.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - SwiftyJSON (from `git@github.com:acegreen/SwiftyJSON.git`, branch `swift3`)
+  - YOChartImageKit
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :branch: swift3
+    :git: git@github.com:acegreen/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 8971384559780e631b041ac91b16734a396d4c14
+    :git: git@github.com:acegreen/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  YOChartImageKit: bd73e66857c848325bef87edc40595d72a6b5fbe
+
+PODFILE CHECKSUM: f675b7ae7b53940546318895d6dc077f12ab7dcc
+
+COCOAPODS: 1.1.1

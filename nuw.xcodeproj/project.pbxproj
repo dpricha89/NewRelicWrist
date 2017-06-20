@@ -1,0 +1,994 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36E13E081C8D59EF8DCE577C /* Pods_nuw_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51247F6AC6115AC31CB92D8D /* Pods_nuw_WatchKit_Extension.framework */; };
+		3E13CAD21DC67E5800D022B7 /* ios in Resources */ = {isa = PBXBuildFile; fileRef = 3E13CAD11DC67E5800D022B7 /* ios */; };
+		3E452F981D304919003437A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E452F971D304919003437A7 /* AppDelegate.swift */; };
+		3E452F9A1D304919003437A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E452F991D304919003437A7 /* ViewController.swift */; };
+		3E452F9D1D304919003437A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E452F9B1D304919003437A7 /* Main.storyboard */; };
+		3E452F9F1D304919003437A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E452F9E1D304919003437A7 /* Assets.xcassets */; };
+		3E452FA21D304919003437A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E452FA01D304919003437A7 /* LaunchScreen.storyboard */; };
+		3E452FAD1D304919003437A7 /* nuwTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E452FAC1D304919003437A7 /* nuwTests.swift */; };
+		3E452FB81D304919003437A7 /* nuwUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E452FB71D304919003437A7 /* nuwUITests.swift */; };
+		3E452FBD1D304919003437A7 /* New Relic Wrist.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3E452FBC1D304919003437A7 /* New Relic Wrist.app */; };
+		3E452FC31D304919003437A7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E452FC11D304919003437A7 /* Interface.storyboard */; };
+		3E452FC51D304919003437A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E452FC41D304919003437A7 /* Assets.xcassets */; };
+		3E452FCC1D304919003437A7 /* New Relic Wrist.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3E452FCB1D304919003437A7 /* New Relic Wrist.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3E452FD51D304919003437A7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E452FD41D304919003437A7 /* ExtensionDelegate.swift */; };
+		3E452FD91D304919003437A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E452FD81D304919003437A7 /* Assets.xcassets */; };
+		3E5A4D551D5638200025DA91 /* MainMenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A4D541D5638200025DA91 /* MainMenuRow.swift */; };
+		3E5A4D571D5639A90025DA91 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A4D561D5639A90025DA91 /* MainMenu.swift */; };
+		3E5A4D591D56404F0025DA91 /* APMController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A4D581D56404F0025DA91 /* APMController.swift */; };
+		3E5A4D5B1D5640600025DA91 /* ServerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A4D5A1D5640600025DA91 /* ServerController.swift */; };
+		3E5A4D5D1D56406F0025DA91 /* BrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5A4D5C1D56406F0025DA91 /* BrowserController.swift */; };
+		3E8454DA1D5980D4008E9C19 /* APMDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8454D91D5980D4008E9C19 /* APMDetail.swift */; };
+		3E8454DE1D59811E008E9C19 /* BrowserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8454DD1D59811E008E9C19 /* BrowserDetail.swift */; };
+		3E8FFAA11D5821F2001DA3D6 /* APMRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8FFAA01D5821F2001DA3D6 /* APMRow.swift */; };
+		3E8FFAA31D5837A3001DA3D6 /* ServerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8FFAA21D5837A3001DA3D6 /* ServerRow.swift */; };
+		3E8FFAA51D5837B1001DA3D6 /* BrowserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8FFAA41D5837B1001DA3D6 /* BrowserRow.swift */; };
+		3EF3B60D1D80E1A100E1FD78 /* ErrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF3B60C1D80E1A100E1FD78 /* ErrorController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E452FA91D304919003437A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E452F8C1D304919003437A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E452F931D304919003437A7;
+			remoteInfo = nuw;
+		};
+		3E452FB41D304919003437A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E452F8C1D304919003437A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E452F931D304919003437A7;
+			remoteInfo = nuw;
+		};
+		3E452FBE1D304919003437A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E452F8C1D304919003437A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E452FBB1D304919003437A7;
+			remoteInfo = "nuw WatchKit App";
+		};
+		3E452FCD1D304919003437A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E452F8C1D304919003437A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E452FCA1D304919003437A7;
+			remoteInfo = "nuw WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3E452FE01D304919003437A7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3E452FCC1D304919003437A7 /* New Relic Wrist.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E452FE41D304919003437A7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3E452FBD1D304919003437A7 /* New Relic Wrist.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2BCA9E656627206A2C086299 /* Pods-nuw WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nuw WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nuw WatchKit Extension/Pods-nuw WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		3E13CAD11DC67E5800D022B7 /* ios */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ios; sourceTree = "<group>"; };
+		3E3FC1921D7B1E61007D66B8 /* nuw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = nuw.entitlements; sourceTree = "<group>"; };
+		3E3FC1931D7B2677007D66B8 /* nuw WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "nuw WatchKit App.entitlements"; sourceTree = "<group>"; };
+		3E3FC1941D7B2692007D66B8 /* nuw WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "nuw WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		3E452F941D304919003437A7 /* New Relic Wrist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New Relic Wrist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E452F971D304919003437A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E452F991D304919003437A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3E452F9C1D304919003437A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E452F9E1D304919003437A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E452FA11D304919003437A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E452FA31D304919003437A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E452FA81D304919003437A7 /* nuwTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nuwTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E452FAC1D304919003437A7 /* nuwTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nuwTests.swift; sourceTree = "<group>"; };
+		3E452FAE1D304919003437A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E452FB31D304919003437A7 /* nuwUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nuwUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E452FB71D304919003437A7 /* nuwUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nuwUITests.swift; sourceTree = "<group>"; };
+		3E452FB91D304919003437A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E452FBC1D304919003437A7 /* New Relic Wrist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New Relic Wrist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E452FC21D304919003437A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3E452FC41D304919003437A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E452FC61D304919003437A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E452FCB1D304919003437A7 /* New Relic Wrist.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "New Relic Wrist.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E452FD11D304919003437A7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3E452FD41D304919003437A7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3E452FD81D304919003437A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E452FDA1D304919003437A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E5A4D541D5638200025DA91 /* MainMenuRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuRow.swift; sourceTree = "<group>"; };
+		3E5A4D561D5639A90025DA91 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		3E5A4D581D56404F0025DA91 /* APMController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APMController.swift; sourceTree = "<group>"; };
+		3E5A4D5A1D5640600025DA91 /* ServerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerController.swift; sourceTree = "<group>"; };
+		3E5A4D5C1D56406F0025DA91 /* BrowserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserController.swift; sourceTree = "<group>"; };
+		3E8454D91D5980D4008E9C19 /* APMDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APMDetail.swift; sourceTree = "<group>"; };
+		3E8454DD1D59811E008E9C19 /* BrowserDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserDetail.swift; sourceTree = "<group>"; };
+		3E8FFAA01D5821F2001DA3D6 /* APMRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APMRow.swift; sourceTree = "<group>"; };
+		3E8FFAA21D5837A3001DA3D6 /* ServerRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerRow.swift; sourceTree = "<group>"; };
+		3E8FFAA41D5837B1001DA3D6 /* BrowserRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserRow.swift; sourceTree = "<group>"; };
+		3EF3B60C1D80E1A100E1FD78 /* ErrorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorController.swift; sourceTree = "<group>"; };
+		51247F6AC6115AC31CB92D8D /* Pods_nuw_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nuw_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C546135EF3BCC6DBD93CD706 /* Pods-nuw WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nuw WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-nuw WatchKit Extension/Pods-nuw WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E452F911D304919003437A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E452FA51D304919003437A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E452FB01D304919003437A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E452FC81D304919003437A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36E13E081C8D59EF8DCE577C /* Pods_nuw_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D37ED67891412384A9D5D4D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23184381F1FDC86ECB36F867 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51247F6AC6115AC31CB92D8D /* Pods_nuw_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E452F8B1D304919003437A7 = {
+			isa = PBXGroup;
+			children = (
+				3E452F961D304919003437A7 /* nuw */,
+				3E452FAB1D304919003437A7 /* nuwTests */,
+				3E452FB61D304919003437A7 /* nuwUITests */,
+				3E452FC01D304919003437A7 /* nuw WatchKit App */,
+				3E452FCF1D304919003437A7 /* nuw WatchKit Extension */,
+				3E452F951D304919003437A7 /* Products */,
+				7A18F6EE7C9F01A6A6D5C2BC /* Pods */,
+				23184381F1FDC86ECB36F867 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3E452F951D304919003437A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E452F941D304919003437A7 /* New Relic Wrist.app */,
+				3E452FA81D304919003437A7 /* nuwTests.xctest */,
+				3E452FB31D304919003437A7 /* nuwUITests.xctest */,
+				3E452FBC1D304919003437A7 /* New Relic Wrist.app */,
+				3E452FCB1D304919003437A7 /* New Relic Wrist.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E452F961D304919003437A7 /* nuw */ = {
+			isa = PBXGroup;
+			children = (
+				3E13CAD11DC67E5800D022B7 /* ios */,
+				3E3FC1921D7B1E61007D66B8 /* nuw.entitlements */,
+				3E452F971D304919003437A7 /* AppDelegate.swift */,
+				3E452F991D304919003437A7 /* ViewController.swift */,
+				3E452F9B1D304919003437A7 /* Main.storyboard */,
+				3E452F9E1D304919003437A7 /* Assets.xcassets */,
+				3E452FA01D304919003437A7 /* LaunchScreen.storyboard */,
+				3E452FA31D304919003437A7 /* Info.plist */,
+			);
+			path = nuw;
+			sourceTree = "<group>";
+		};
+		3E452FAB1D304919003437A7 /* nuwTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E452FAC1D304919003437A7 /* nuwTests.swift */,
+				3E452FAE1D304919003437A7 /* Info.plist */,
+			);
+			path = nuwTests;
+			sourceTree = "<group>";
+		};
+		3E452FB61D304919003437A7 /* nuwUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3E452FB71D304919003437A7 /* nuwUITests.swift */,
+				3E452FB91D304919003437A7 /* Info.plist */,
+			);
+			path = nuwUITests;
+			sourceTree = "<group>";
+		};
+		3E452FC01D304919003437A7 /* nuw WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3E3FC1931D7B2677007D66B8 /* nuw WatchKit App.entitlements */,
+				3E452FC11D304919003437A7 /* Interface.storyboard */,
+				3E452FC41D304919003437A7 /* Assets.xcassets */,
+				3E452FC61D304919003437A7 /* Info.plist */,
+			);
+			path = "nuw WatchKit App";
+			sourceTree = "<group>";
+		};
+		3E452FCF1D304919003437A7 /* nuw WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3EF3B60B1D80E18800E1FD78 /* Utils */,
+				3E3FC1941D7B2692007D66B8 /* nuw WatchKit Extension.entitlements */,
+				3E8454D81D59807B008E9C19 /* DetailControllers */,
+				3E8454D71D597CE1008E9C19 /* TableRows */,
+				3E8454D61D597CCE008E9C19 /* MenuControllers */,
+				3E452FD41D304919003437A7 /* ExtensionDelegate.swift */,
+				3E452FD81D304919003437A7 /* Assets.xcassets */,
+				3E452FDA1D304919003437A7 /* Info.plist */,
+				3E452FD01D304919003437A7 /* Supporting Files */,
+			);
+			path = "nuw WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3E452FD01D304919003437A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E452FD11D304919003437A7 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E8454D61D597CCE008E9C19 /* MenuControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A4D561D5639A90025DA91 /* MainMenu.swift */,
+				3E5A4D5A1D5640600025DA91 /* ServerController.swift */,
+				3E5A4D581D56404F0025DA91 /* APMController.swift */,
+				3E5A4D5C1D56406F0025DA91 /* BrowserController.swift */,
+			);
+			name = MenuControllers;
+			sourceTree = "<group>";
+		};
+		3E8454D71D597CE1008E9C19 /* TableRows */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A4D541D5638200025DA91 /* MainMenuRow.swift */,
+				3E8FFAA01D5821F2001DA3D6 /* APMRow.swift */,
+				3E8FFAA21D5837A3001DA3D6 /* ServerRow.swift */,
+				3E8FFAA41D5837B1001DA3D6 /* BrowserRow.swift */,
+			);
+			name = TableRows;
+			sourceTree = "<group>";
+		};
+		3E8454D81D59807B008E9C19 /* DetailControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E8454D91D5980D4008E9C19 /* APMDetail.swift */,
+				3E8454DD1D59811E008E9C19 /* BrowserDetail.swift */,
+			);
+			name = DetailControllers;
+			sourceTree = "<group>";
+		};
+		3EF3B60B1D80E18800E1FD78 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3EF3B60C1D80E1A100E1FD78 /* ErrorController.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		7A18F6EE7C9F01A6A6D5C2BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BCA9E656627206A2C086299 /* Pods-nuw WatchKit Extension.debug.xcconfig */,
+				C546135EF3BCC6DBD93CD706 /* Pods-nuw WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E452F931D304919003437A7 /* nuw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E452FE51D304919003437A7 /* Build configuration list for PBXNativeTarget "nuw" */;
+			buildPhases = (
+				3E452F901D304919003437A7 /* Sources */,
+				3E452F911D304919003437A7 /* Frameworks */,
+				3E452F921D304919003437A7 /* Resources */,
+				3E452FE41D304919003437A7 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E452FBF1D304919003437A7 /* PBXTargetDependency */,
+			);
+			name = nuw;
+			productName = nuw;
+			productReference = 3E452F941D304919003437A7 /* New Relic Wrist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E452FA71D304919003437A7 /* nuwTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E452FE81D304919003437A7 /* Build configuration list for PBXNativeTarget "nuwTests" */;
+			buildPhases = (
+				3E452FA41D304919003437A7 /* Sources */,
+				3E452FA51D304919003437A7 /* Frameworks */,
+				3E452FA61D304919003437A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E452FAA1D304919003437A7 /* PBXTargetDependency */,
+			);
+			name = nuwTests;
+			productName = nuwTests;
+			productReference = 3E452FA81D304919003437A7 /* nuwTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E452FB21D304919003437A7 /* nuwUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E452FEB1D304919003437A7 /* Build configuration list for PBXNativeTarget "nuwUITests" */;
+			buildPhases = (
+				3E452FAF1D304919003437A7 /* Sources */,
+				3E452FB01D304919003437A7 /* Frameworks */,
+				3E452FB11D304919003437A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E452FB51D304919003437A7 /* PBXTargetDependency */,
+			);
+			name = nuwUITests;
+			productName = nuwUITests;
+			productReference = 3E452FB31D304919003437A7 /* nuwUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3E452FBB1D304919003437A7 /* nuw WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E452FE11D304919003437A7 /* Build configuration list for PBXNativeTarget "nuw WatchKit App" */;
+			buildPhases = (
+				3E452FBA1D304919003437A7 /* Resources */,
+				3E452FE01D304919003437A7 /* Embed App Extensions */,
+				D37ED67891412384A9D5D4D5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E452FCE1D304919003437A7 /* PBXTargetDependency */,
+			);
+			name = "nuw WatchKit App";
+			productName = "nuw WatchKit App";
+			productReference = 3E452FBC1D304919003437A7 /* New Relic Wrist.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3E452FCA1D304919003437A7 /* nuw WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E452FDD1D304919003437A7 /* Build configuration list for PBXNativeTarget "nuw WatchKit Extension" */;
+			buildPhases = (
+				AF75A7C250C6B723D5BEAF5C /* [CP] Check Pods Manifest.lock */,
+				3E452FC71D304919003437A7 /* Sources */,
+				3E452FC81D304919003437A7 /* Frameworks */,
+				3E452FC91D304919003437A7 /* Resources */,
+				5DEA5DC549FB5195C9956787 /* [CP] Embed Pods Frameworks */,
+				7FC20FA79D9052A45BAE7328 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nuw WatchKit Extension";
+			productName = "nuw WatchKit Extension";
+			productReference = 3E452FCB1D304919003437A7 /* New Relic Wrist.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E452F8C1D304919003437A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "David Richards";
+				TargetAttributes = {
+					3E452F931D304919003437A7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = A67X9H667T;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					3E452FA71D304919003437A7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = 3E452F931D304919003437A7;
+					};
+					3E452FB21D304919003437A7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = 3E452F931D304919003437A7;
+					};
+					3E452FBB1D304919003437A7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = A67X9H667T;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					3E452FCA1D304919003437A7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = A67X9H667T;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 3E452F8F1D304919003437A7 /* Build configuration list for PBXProject "nuw" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E452F8B1D304919003437A7;
+			productRefGroup = 3E452F951D304919003437A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E452F931D304919003437A7 /* nuw */,
+				3E452FA71D304919003437A7 /* nuwTests */,
+				3E452FB21D304919003437A7 /* nuwUITests */,
+				3E452FBB1D304919003437A7 /* nuw WatchKit App */,
+				3E452FCA1D304919003437A7 /* nuw WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E452F921D304919003437A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E452FA21D304919003437A7 /* LaunchScreen.storyboard in Resources */,
+				3E452F9F1D304919003437A7 /* Assets.xcassets in Resources */,
+				3E13CAD21DC67E5800D022B7 /* ios in Resources */,
+				3E452F9D1D304919003437A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E452FA61D304919003437A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E452FB11D304919003437A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E452FBA1D304919003437A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E452FC51D304919003437A7 /* Assets.xcassets in Resources */,
+				3E452FC31D304919003437A7 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E452FC91D304919003437A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E452FD91D304919003437A7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DEA5DC549FB5195C9956787 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nuw WatchKit Extension/Pods-nuw WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FC20FA79D9052A45BAE7328 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nuw WatchKit Extension/Pods-nuw WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF75A7C250C6B723D5BEAF5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E452F901D304919003437A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E452F9A1D304919003437A7 /* ViewController.swift in Sources */,
+				3E452F981D304919003437A7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E452FA41D304919003437A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E452FAD1D304919003437A7 /* nuwTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E452FAF1D304919003437A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E452FB81D304919003437A7 /* nuwUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E452FC71D304919003437A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E5A4D5B1D5640600025DA91 /* ServerController.swift in Sources */,
+				3E8454DE1D59811E008E9C19 /* BrowserDetail.swift in Sources */,
+				3EF3B60D1D80E1A100E1FD78 /* ErrorController.swift in Sources */,
+				3E8454DA1D5980D4008E9C19 /* APMDetail.swift in Sources */,
+				3E8FFAA51D5837B1001DA3D6 /* BrowserRow.swift in Sources */,
+				3E8FFAA31D5837A3001DA3D6 /* ServerRow.swift in Sources */,
+				3E5A4D591D56404F0025DA91 /* APMController.swift in Sources */,
+				3E8FFAA11D5821F2001DA3D6 /* APMRow.swift in Sources */,
+				3E5A4D551D5638200025DA91 /* MainMenuRow.swift in Sources */,
+				3E5A4D571D5639A90025DA91 /* MainMenu.swift in Sources */,
+				3E5A4D5D1D56406F0025DA91 /* BrowserController.swift in Sources */,
+				3E452FD51D304919003437A7 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E452FAA1D304919003437A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E452F931D304919003437A7 /* nuw */;
+			targetProxy = 3E452FA91D304919003437A7 /* PBXContainerItemProxy */;
+		};
+		3E452FB51D304919003437A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E452F931D304919003437A7 /* nuw */;
+			targetProxy = 3E452FB41D304919003437A7 /* PBXContainerItemProxy */;
+		};
+		3E452FBF1D304919003437A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E452FBB1D304919003437A7 /* nuw WatchKit App */;
+			targetProxy = 3E452FBE1D304919003437A7 /* PBXContainerItemProxy */;
+		};
+		3E452FCE1D304919003437A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E452FCA1D304919003437A7 /* nuw WatchKit Extension */;
+			targetProxy = 3E452FCD1D304919003437A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E452F9B1D304919003437A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E452F9C1D304919003437A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E452FA01D304919003437A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E452FA11D304919003437A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3E452FC11D304919003437A7 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E452FC21D304919003437A7 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E452FDB1D304919003437A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E452FDC1D304919003437A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E452FDE1D304919003437A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BCA9E656627206A2C086299 /* Pods-nuw WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_ENTITLEMENTS = "nuw WatchKit Extension/nuw WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = A67X9H667T;
+				INFOPLIST_FILE = "nuw WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dritechnologies.nuw.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "New Relic Wrist";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		3E452FDF1D304919003437A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C546135EF3BCC6DBD93CD706 /* Pods-nuw WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_ENTITLEMENTS = "nuw WatchKit Extension/nuw WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = A67X9H667T;
+				INFOPLIST_FILE = "nuw WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dritechnologies.nuw.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "New Relic Wrist";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		3E452FE21D304919003437A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = A67X9H667T;
+				IBSC_MODULE = nuw_WatchKit_Extension;
+				INFOPLIST_FILE = "nuw WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dritechnologies.nuw.watchkitapp;
+				PRODUCT_NAME = "New Relic Wrist";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		3E452FE31D304919003437A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = A67X9H667T;
+				IBSC_MODULE = nuw_WatchKit_Extension;
+				INFOPLIST_FILE = "nuw WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dritechnologies.nuw.watchkitapp;
+				PRODUCT_NAME = "New Relic Wrist";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		3E452FE61D304919003437A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = nuw/nuw.entitlements;
+				DEVELOPMENT_TEAM = A67X9H667T;
+				INFOPLIST_FILE = nuw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dritechnologies.nuw;
+				PRODUCT_NAME = "New Relic Wrist";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3E452FE71D304919003437A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = nuw/nuw.entitlements;
+				DEVELOPMENT_TEAM = A67X9H667T;
+				INFOPLIST_FILE = nuw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dritechnologies.nuw;
+				PRODUCT_NAME = "New Relic Wrist";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3E452FE91D304919003437A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = nuwTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dritechnologies.nuwTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nuw.app/nuw";
+			};
+			name = Debug;
+		};
+		3E452FEA1D304919003437A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = nuwTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dritechnologies.nuwTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nuw.app/nuw";
+			};
+			name = Release;
+		};
+		3E452FEC1D304919003437A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = nuwUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dritechnologies.nuwUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = nuw;
+			};
+			name = Debug;
+		};
+		3E452FED1D304919003437A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = nuwUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dritechnologies.nuwUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = nuw;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E452F8F1D304919003437A7 /* Build configuration list for PBXProject "nuw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E452FDB1D304919003437A7 /* Debug */,
+				3E452FDC1D304919003437A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E452FDD1D304919003437A7 /* Build configuration list for PBXNativeTarget "nuw WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E452FDE1D304919003437A7 /* Debug */,
+				3E452FDF1D304919003437A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E452FE11D304919003437A7 /* Build configuration list for PBXNativeTarget "nuw WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E452FE21D304919003437A7 /* Debug */,
+				3E452FE31D304919003437A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E452FE51D304919003437A7 /* Build configuration list for PBXNativeTarget "nuw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E452FE61D304919003437A7 /* Debug */,
+				3E452FE71D304919003437A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E452FE81D304919003437A7 /* Build configuration list for PBXNativeTarget "nuwTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E452FE91D304919003437A7 /* Debug */,
+				3E452FEA1D304919003437A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E452FEB1D304919003437A7 /* Build configuration list for PBXNativeTarget "nuwUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E452FEC1D304919003437A7 /* Debug */,
+				3E452FED1D304919003437A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E452F8C1D304919003437A7 /* Project object */;
+}
